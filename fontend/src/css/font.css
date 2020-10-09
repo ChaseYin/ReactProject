@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Frijole&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gilda+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mali&display=swap');
+
+
+.boldFont{
+    font-family: 'Frijole', cursive;
+}
+
+.font1{
+    font-family: 'Comic Neue', cursive;
+}
+
+.font1-1{
+    font-family: 'Comic Neue', cursive;
+    font-size: 20px;
+}
+.font2-2{
+    font-family: 'Oswald', sans-serif;
+    font-size: 22px;
+}
+.ibmFont1{
+    font-size: 25px;
+    font-family: 'Handlee', cursive;
+}
+
+.normalFont{
+    font-family: 'Gilda Display', serif;
+    font-size: 18px;
+}
+.normalFont-2{
+    font-family: 'Gilda Display', serif;
+    font-size: 18px;
+}
+
+.normalFont-3{
+    font-family: 'Gilda Display', serif;
+    font-size: 30px;
+}
+.normalFont-4{
+    font-family: 'Gilda Display', serif;
+    font-size: 60px;
+    margin-left: 20px;
+    margin-top: 50px;
+    align-content: center;
+}
+
+.cuteFont{
+    font-family: 'Mali', cursive;
+}
+
+.goodFont{
+    font-family: 'Comic Neue', cursive;
+    
+}
+
+.goodFont-2{
+    font-family: 'Comic Neue', cursive;
+    font-size: 18px;
+}
+.goodFont-2-1{
+    font-family: 'Comic Neue', cursive;
+    font-size: 24px;
+}
+.goodFont-3{
+    font-family: 'Comic Neue', cursive;
+    font-size: 35px;
+    
+}
+.goodFont-4{
+    font-family: 'Comic Neue', cursive;
+    font-size: 70px;
+}
+.goodFont-2-white{
+    font-family: 'Comic Neue', cursive;
+    font-size: 18px;
+    color: white;
+}
+.goodFont-3-white{
+    font-family: 'Comic Neue', cursive;
+    font-size: 35px;
+    color: white;
+}
+
+.titleFont{
+    font-family: 'Gilda Display', serif;
+    font-size: 120px;
+}
+
+.goodFontCol{
+    font-family: 'Comic Neue', cursive;
+   
+    font-size: 35px;
+}
