@@ -9,7 +9,7 @@ import {
 
 } from '../actions/productActions';
 import PaypalButton from '../components/PaypalButton';
-
+import workerL from '../components/worker'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCoffee, faBook, faTimesCircle, faAddressBook, faKey, faEnvelope,
   faCarSide,
@@ -210,7 +210,7 @@ function ProductsScreen(props) {
       })
       .then((response) => {
         setAwsAudio(response.data)
-        console.log('上传AMS的返回数据是：'+response.data);
+        //console.log('上传AMS的返回数据是：'+response.data);
         // setAudio(response.data.path);
         // setAudioText(response.data.text);
         // console.log('收到结果:'+response.data.text)
@@ -276,24 +276,52 @@ function ProductsScreen(props) {
  useEffect(()=>{
   if(type==='choiceTask'){
     getWorker()
+   
   }
   
  },[type]);
   if(type==='choiceTask'){
+    var length=worker.length
+    var arr = new Array()
+    arr = worker
+    //console.log('新worker哈哈哈'+arr[0])
+    let newArr = Array.from(arr);
     // getWorker()
    taskInfo = (
-    <span>
-    <h2>Choose specific worker</h2>
-  <span className="goodFont"><input name="type" type="radio" value={worker[0]}
-            onChange={(e) => setAllocate(worker[0]) } 
-            /><FontAwesomeIcon icon={faUser}/>&nbsp;&nbsp;worker1:{worker[0]}<br/> </span> 
-            <span className="goodFont"><input name="type" type="radio" value={worker[1]}
-            onChange={(e) => setAllocate(worker[1]) } 
-            /><FontAwesomeIcon icon={faUser}/>&nbsp;&nbsp;worker2:{worker[1]} <br/></span> 
-            <span className="goodFont"><input name="type" type="radio" value={worker[2]}
-            onChange={(e) => setAllocate(worker[2]) } 
-            /><FontAwesomeIcon icon={faUser}/>&nbsp;&nbsp;worker3:{worker[2]} <br/></span> 
-    </span>
+   
+    <tbody>
+       <h2>Choose specific worker</h2>
+      {
+              newArr.map(function(val, index){
+              return <span className='goodFont'>
+                 <input name="type" type="radio" value={worker[index]}
+           onChange={(e) => setAllocate(worker[index]) } 
+       /><FontAwesomeIcon icon={faUser}/>&nbsp;&nbsp;worker{index+1}:{val}<br/>
+              
+                </span>
+              })
+      }
+          </tbody>
+
+
+
+    // <span>
+    // <h2>Choose specific worker</h2>
+  
+    //   <span className="goodFont">
+    //   <input name="type" type="radio" value={worker[0]}
+    //         onChange={(e) => setAllocate(worker[0]) } 
+    //         /><FontAwesomeIcon icon={faUser}/>&nbsp;&nbsp;worker1:{worker[0]}<br/> </span> 
+
+    //         <span className="goodFont">
+    //         <input name="type" type="radio" value={worker[1]}
+    //         onChange={(e) => setAllocate(worker[1]) } 
+    //         /><FontAwesomeIcon icon={faUser}/>&nbsp;&nbsp;worker2:{worker[1]} <br/></span> 
+            
+    //         <span className="goodFont"><input name="type" type="radio" value={worker[2]}
+    //         onChange={(e) => setAllocate(worker[2]) } 
+    //         /><FontAwesomeIcon icon={faUser}/>&nbsp;&nbsp;worker3:{worker[2]} <br/></span> 
+    // </span>
     )
         
   }
