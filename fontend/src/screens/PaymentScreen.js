@@ -33,7 +33,8 @@ import { faCoffee, faBook, faTimesCircle, faAddressBook, faKey, faEnvelope,
   faGlobe,
   faGlobeAsia,
   faPiggyBank,
-  faSdCard
+  faSdCard,
+  faVials
 
 } from '@fortawesome/free-solid-svg-icons'
 
@@ -68,6 +69,18 @@ function PaymentScreen(props) {
                   onChange={(e) => setPaymentMethod(e.target.value)}
                 ></input>
                 <label for="paymentMethod">&nbsp;&nbsp;<FontAwesomeIcon icon={faPiggyBank}/>&nbsp;&nbsp;&nbsp;Mastercard</label>
+              </div>
+            </li>
+            <li>
+              <div>
+                <input
+                  type="radio"
+                  name="paymentMethod"
+                  id="paymentMethod"
+                  value="paypal"
+                  onChange={(e) => setPaymentMethod(e.target.value)}
+                ></input>
+                <label for="paymentMethod">&nbsp;&nbsp;<FontAwesomeIcon icon={faCreditCard}/>&nbsp;&nbsp;&nbsp;Visacard</label>
               </div>
             </li>
 

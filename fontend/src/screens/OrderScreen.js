@@ -80,7 +80,7 @@ function OrderScreen(props) {
             <h3 className="goodFont"><FontAwesomeIcon icon={faCreditCard}/>&nbsp;&nbsp;&nbsp;Salary Method</h3>
             <div className="goodFont">
             
-              Get paid by: {order.payment.paymentMethod}
+              Get paid: {order.totalPrice}
             </div>
             {/* <div>
               {order.isPaid ? "已支付 " + order.paidAt : "未支付"}

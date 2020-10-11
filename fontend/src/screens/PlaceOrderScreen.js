@@ -88,7 +88,7 @@ function PlaceOrderScreen(props) {
           <h3><FontAwesomeIcon icon={faMoneyCheckAlt}/>&nbsp;&nbsp;&nbsp;Salary</h3>
           <div >
             {/* 支付方式: {cart.payment.paymentMethod} */}
-            Get paid in：MasterCard
+            Get paid: ${totalPrice}
           </div>
         </div>
         <div>
